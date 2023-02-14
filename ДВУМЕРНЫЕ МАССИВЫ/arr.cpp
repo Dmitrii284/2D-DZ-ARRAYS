@@ -25,12 +25,14 @@ int main() {
 		
 	}
 	int sumR = 0;
-	for (int i = size; i <= size; i++)
+	for (int i = 0; i < size; i++) {
+		sumR = 0;
 		for (int j = 0; j < size; j++) {
 			sumR += mx[i][j];
 		}
-	std::cout << sumR << '\n';
-	
+		std::cout << '\n' << sumR << '\n';// Тут добавляется к сумме каждого ряда . Надо вывести только одного.
+	}
+		
 
 	return 0;
 }
