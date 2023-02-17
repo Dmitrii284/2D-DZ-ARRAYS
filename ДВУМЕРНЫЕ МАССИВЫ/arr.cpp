@@ -55,6 +55,7 @@ int main() {
 				}
 			std::cout << mx[i][j] << '\t';
 		}
+
 		std::cout << '\n';
 		break;
 	}
