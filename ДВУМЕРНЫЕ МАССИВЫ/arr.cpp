@@ -35,30 +35,43 @@ int main() {
 		
 
 
-	int tmp = 0;
+	
 	int k;
 	std::cout << "Enter line number col to sort -> ";
 	std::cin >> k;
 
+	
+			/*for (int i = size - 1; i >= 0; i--) {
+				for (int j = 0; j < i; j++) {
+					if (mx[k][j + 1] < mx[k][j])
+						std::swap(mx[k][j + 1], mx[k][j]);
 
-	for (int i = 0; i < size; i++) {
-		for (int j = 0; j < size; j++) {
+					
 
-			if (i = k)
-				for (i = k - 1; i > k;) {
-					for (j = 0; j < size; j++) {
-						if (mx[i][j] > mx[i][j + 1])
-							tmp = mx[i][j];
-						mx[i][j] = mx[i][j + 1];
-						mx[i][j + 1] = tmp;
-					}
 				}
-			std::cout << mx[i][j] << '\t';
+				
+				
+			}*/
+			
+		/*
+				for (int j = 0; j < size; j++) {
+					
+					std::cout << mx[k][j] << '\t';
+				}
+				std::cout << '\n';
+				*/
+	std::sort(mx[k], mx[k] + size);
+		
+	//for (int i = 0; i < size; i++) {
+		for (int j = 0; j < size; j++) {
+			
+			std::cout << mx[k][j] << '\t';
 		}
-
 		std::cout << '\n';
-		break;
-	}
+	//}
+
+		
+
 
 
 
