@@ -24,15 +24,42 @@ int main() {
 		std::cout << '\n';
 		
 	}
-	int sumR = 0;
+	/*int sumR = 0;
 	for (int i = 0; i < size; i++) {
 		sumR = 0;
 		for (int j = 0; j < size; j++) {
 			sumR += mx[i][j];
 		}
 		std::cout << '\n' << sumR << '\n';// Тут добавляется к сумме каждого ряда . Надо вывести только одного.
-	}
+	}*/
 		
+
+
+	int tmp = 0;
+	int k;
+	std::cout << "Enter line number col to sort -> ";
+	std::cin >> k;
+
+
+	for (int i = 0; i < size; i++) {
+		for (int j = 0; j < size; j++) {
+
+			if (i = k)
+				for (i = k - 1; i > k;) {
+					for (j = 0; j < size; j++) {
+						if (mx[i][j] > mx[i][j + 1])
+							tmp = mx[i][j];
+						mx[i][j] = mx[i][j + 1];
+						mx[i][j + 1] = tmp;
+					}
+				}
+			std::cout << mx[i][j] << '\t';
+		}
+		std::cout << '\n';
+		break;
+	}
+
+
 
 	return 0;
 }
